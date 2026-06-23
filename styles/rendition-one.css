@@ -105,9 +105,11 @@ main {
 
 .overview img {
   width: 100%;
+  max-height: 560px;
   border-radius: 14px;
   border: 1px solid rgba(15, 23, 42, 0.15);
-  object-fit: cover;
+  object-fit: contain;
+  background: linear-gradient(135deg, #dbe4e1, #eef3f1);
 }
 
 .studio-spec {
@@ -119,9 +121,27 @@ main {
 
 .studio-spec img {
   width: 100%;
+  max-height: 560px;
   border-radius: 14px;
   border: 1px solid rgba(15, 23, 42, 0.15);
-  object-fit: cover;
+  object-fit: contain;
+  background: linear-gradient(135deg, #dbe4e1, #eef3f1);
+}
+
+.hall-spec {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.hall-spec img {
+  width: 100%;
+  max-height: 560px;
+  border-radius: 14px;
+  border: 1px solid rgba(15, 23, 42, 0.15);
+  object-fit: contain;
+  background: #0f172a;
 }
 
 h2 {
@@ -188,6 +208,10 @@ li + li {
   }
 
   .studio-spec {
+    grid-template-columns: 1fr;
+  }
+
+  .hall-spec {
     grid-template-columns: 1fr;
   }
 
