@@ -165,6 +165,33 @@ h1 {
   margin-top: 0.3rem;
 }
 
+.theater-focus {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 1rem;
+  margin-top: 0.8rem;
+}
+
+.theater-focus img {
+  width: 100%;
+  height: auto;
+  max-height: 560px;
+  object-fit: contain;
+  border-radius: 18px;
+  border: 1px solid rgba(30, 27, 75, 0.12);
+  box-shadow: 0 16px 28px rgba(30, 27, 75, 0.08);
+  background: linear-gradient(135deg, #fdead1, #fff8ec);
+}
+
+.theater-focus ul {
+  margin: 0.6rem 0 0;
+  padding-left: 1rem;
+}
+
+.theater-focus li + li {
+  margin-top: 0.3rem;
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -244,6 +271,10 @@ h1 {
   }
 
   .hall-focus {
+    grid-template-columns: 1fr;
+  }
+
+  .theater-focus {
     grid-template-columns: 1fr;
   }
 

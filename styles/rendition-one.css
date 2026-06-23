@@ -144,6 +144,22 @@ main {
   background: #0f172a;
 }
 
+.theater-spec {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.theater-spec img {
+  width: 100%;
+  max-height: 560px;
+  border-radius: 14px;
+  border: 1px solid rgba(15, 23, 42, 0.15);
+  object-fit: contain;
+  background: linear-gradient(135deg, #dbe4e1, #eef3f1);
+}
+
 h2 {
   margin-top: 0;
   font-size: 1.7rem;
@@ -212,6 +228,10 @@ li + li {
   }
 
   .hall-spec {
+    grid-template-columns: 1fr;
+  }
+
+  .theater-spec {
     grid-template-columns: 1fr;
   }
 
